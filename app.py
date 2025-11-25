@@ -29,3 +29,27 @@ ax.set_ylabel("Velocity (m/s)")
 ax.set_title("Flow Velocity vs. Pipe Diameter")
 ax.grid(True)
 st.pyplot(fig)
+# --- Stripe Pay Button ---
+stripe_link = "https://donate.stripe.com/00w4gz8Lhbal4DK0T58AE00"   # ← 换成你的 Payment Link
+
+st.markdown(
+    f"""
+    <div style="margin:20px 0;padding:15px;border:1px solid #ccc;border-radius:10px;">
+        <h3>支持我的项目 / Buy Me a Coffee ☕</h3>
+        <a href="{stripe_link}" target="_blank">
+            <button style="
+                background-color:#4CAF50;
+                color:white;
+                padding:10px 20px;
+                border:none;
+                border-radius:8px;
+                cursor:pointer;
+                font-size:16px;">
+                支持我 $1
+            </button>
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
